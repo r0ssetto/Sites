@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="principal.css" />
+    <!-- garantir o toque de zoom em dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+     header {
+            background-color: #f0f0f0;
+            height: auto;
+            max-width: 100%;
+        }
+        li a{
+            color:#2e2b2b;
+        }
+        
+        #header {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        
+        #logo h1 {
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+        
+        #logo h1 span {
+            color: #b43b3b;
+        }
+        
+        .nav-pills > li > a:hover,
+        .nav-pills > li.active > a:hover,
+        .nav-pills > li.active > a,
+        .nav-pills > li.active > a:visited {
+            background-color: #b43b3b;
+            border-radius: 10px;
+            width: auto;
+            text-align: center;
+            color: white;
+        }
+        
+        .nav{
+            margin-top: 10px;
+        }
+        #meioheader nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            width: 100px;
+            text-align: center;
+            height: 40px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: #2e2b2b;
+            color: #fff;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 0 auto;
+        }
+                
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+ <header class="container-fluid">
+        <section id="header">
+            <div class="col-sm-6" id="logo">
+                <h1><span>Gabriel Oliveira do Nascimento</span>&nbsp;19219016</h1>
+            </div>
+            <div class="col-sm-6">
+                <ul class="nav nav-pills">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="pagina1.html">Página 1</a>
+                    </li>
+                    <li class="active"><a href="contato.html">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </header>
+    
+    <section class="container" id="principal">
+        <h1>CONTATO</h1>
+        
+            <form >
+                
+                <p>Nome:<br/><input type="text" name="nome" /></p>
+                <p>Email:<br/><input type="email" name="email" /></p>
+                <p>Assunto:<br/><input type="text" name="assunto" /></p>
+                <p>Mensagem:<br/><textarea name="msg"></textarea></p>
+                <p><input type="submit" value="Enviar" id="submit" /></p>
+            </form>       
+    </section>
+    <footer class="container-fluid">
+        <small>&copy; 2018</small>
+    </footer>
+</body>
+</html>
